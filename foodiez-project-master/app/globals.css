@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Dancing+Script:wght@400..700&family=Kaushan+Script&family=Montez&family=Permanent+Marker&family=Satisfy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-montez: "Montez", cursive;
+  --font-dancing-script: "Dancing Script", cursive;
+  --font-dmsans: "DM Sans", sans-serif;
+  --font-kaushan-script: "Kaushan Script", cursive;
+  --font-permanent-marker: "Permanent Marker", cursive;
+  --font-satisfy: "Satisfy", cursive;
+  --font-fredoka: "Fredoka", sans-serif;
+
+
+  --color-gray-500: #373943;
+  --color-gray-900: #2d2e3e;
+  --color-yellow-900: #FFD753;
+  --color-blue-1000: #2265ca;
+  --color-blue-50: #2c3e50;
+  --color-blue-100: #303844;
+  --color-red-1000: #ee5253;
+  --color-purple-1000: #2b3447;
+  --color-gray-1000: #111828;
+  --color-pink-1000: #C29AF2
+
+}
+
+@layer utilities {
+
+  /* Hide scrollbar for Chrome, Safari and Opera */
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+
+  /* Hide scrollbar for IE, Edge and Firefox */
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */
+  }
+
+  /* Show scrollbar */
+  .scrollbar::-webkit-scrollbar {
+    display: block;
+  }
+
+  .scrollbar {
+    -ms-overflow-style: auto;
+    /* IE and Edge */
+    scrollbar-width: auto;
+    /* Firefox */
+  }
+}
+
+.MyGradient{
+  mask-image: linear-gradient(
+    to right,
+    rgba(0,0,0,0),
+    rgba(0,0,0,1) 20%,
+    rgba(0,0,0,1) 80%,
+    rgba(0,0,0,0)
+  );
+}

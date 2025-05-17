@@ -32,14 +32,7 @@ export function addItemToCart(itemId: string, user: User) {
         userId: user?.id,
         itemId: itemId
     }).then((response) => {
-        // toast.success("Item added to cart.", {
-        //     autoClose: 1000,
-        //     theme: "colored",
-        //     hideProgressBar: true,
-        //     className:"w-5000px",
-        //     position:"top-center",
-        //     transition: Bounce
-        // })
+      
        
     }).catch(() => {
         toast.error("Error while adding item to cart.", {

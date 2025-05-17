@@ -1,6 +1,6 @@
 'use client'
 
-import { useAnimation, useInView, motion } from "motion/react";
+import { useAnimation, useInView, motion } from "framer-motion";
 import { signIn } from "next-auth/react";
 import { useRouter } from "next/navigation";
 import { useEffect, useRef, useState } from "react";

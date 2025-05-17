@@ -16,7 +16,7 @@ const CACHE_TTL = 60 * 60; // Cache for 1 hour
     }
 
     try {
-        const response = await axios.get(`${process.env.BACKEND_URL}/api/type`, {});
+        const response = await axios.get(`/api/type`, {});
         const data = response.data as { response: Type[] };
         setCache(cacheKey, data.response, CACHE_TTL);
         return data.response;
@@ -33,7 +33,7 @@ const CACHE_TTL = 60 * 60; // Cache for 1 hour
     }
 
     try {
-        const response = await axios.get(`${process.env.BACKEND_URL}/api/menu/all`);
+        const response = await axios.get(`/api/menu/all`);
         const data = response.data;
         setCache(cacheKey, data, CACHE_TTL);
         return data;
